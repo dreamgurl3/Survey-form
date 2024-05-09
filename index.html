@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Dance Studio Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>ABC Dance Studio Survey Form</h1>
+    <p>Please take a moment to fill out our survey form for future improvements.</p>
+    <form>
+        <div class="info">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required>
+        </div>
+        <div class="info">
+            <label for="email">Email address: </label>
+            <input type="email" id="email" name="email" placeholder="" required>
+        </div>
+        <div class="info">
+            <label id="phone-number">Phone number:</label>
+            <input type="tel" name="phone-number" id="phone-number">
+        </div>
+        <div class="info">
+            <label for="number">Your age:</label>
+            <input type="number" id="number" name="age" min="18" max="110" placeholder="age">
+        </div>
+
+        <fieldset>
+            <legend>What is your current skill level?</legend>
+            <label for="beginner"><input type="radio" id="beginner" name="skill-level" value="beginner" checked>
+                Beginner</label>
+
+            <label for="intermediate"><input type="radio" id="intermediate" name="skill-level" value="intermediate">
+                Intermediate</label>
+
+            <label for="advanced"><input type="radio" id="advanced" name="skill-level" value="advanced">
+                Advanced</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Which classes are you currently taking? (check all that apply)</legend>
+            <label for="latin"><input type="checkbox" id="latin" name="type-of-class" value="latin">
+                Latin</label>
+            <label for="ballroom"><input type="checkbox" id="ballroom" name="type-of-class" value="ballroom">
+                Ballroom</label>
+            <label for="swing"><input type="checkbox" id="swing" name="type-of-class" value="swing">
+                Swing</label>
+            <label for="tango"><input type="checkbox" id="tango" name="type-of-class" value="tango">
+                Tango</label>
+        </fieldset>
+
+
+        <label for="dropdown">How did you learn about us?</label>
+        <select id="dropdown" name="referrer">
+            <option value="">Select one</option>
+            <option value="1">Facebook</option>
+            <option value="2">Youtube</option>
+            <option value="3">Refer by a friend</option>
+            <option value="4">Other</option>
+        </select>
+
+        <label for="suggestions-or-comments" class="comments">Please write down any suggestions or comments:</label>
+        <textarea id="suggestions-or-comments" name="comments" rows="4" cols="30"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

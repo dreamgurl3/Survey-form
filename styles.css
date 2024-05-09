@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: rgb(79, 38, 131);
+  color: rgb(255, 255, 255);
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.info {
+  padding: 10px 0;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments,
+textarea {
+  display: block;
+}
